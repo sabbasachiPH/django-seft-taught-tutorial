@@ -13,3 +13,7 @@ def form_view(request):
     context = {"form": form}
     return render(request, "form.html", context)
 
+def about(request):
+    content = {'about': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Id odio corporis nihil, ducimus magni laudantium assumenda voluptatum itaque alias veniam non ad rem beatae commodi, doloribus modi explicabo fuga perspiciatis.'}
+    return render(request, "about.html",content)
+
