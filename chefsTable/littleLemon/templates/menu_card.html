@@ -1,5 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<h2>Menu Card</h2>
+<p>This is an Menu Card page of Litte Lemon</p>
+
 {% if menu %} {% for item in menu %}
 <p>{{item.name}} : {{item.price}}</p>
 {% endfor %} {% else %}
 <p>No Items to display.</p>
-{% endif %}
+{% endif %} {% endblock %}
